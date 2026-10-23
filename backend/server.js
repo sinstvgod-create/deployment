@@ -50,17 +50,6 @@ app.use("/api/progress", progressRoutes);
 
 app.use(errorMiddleware);
 
-<<<<<<< HEAD
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`OverloadFit backend running on port ${PORT}`);
 });
-=======
-app.listen(
-  PORT,
-  () => {
-    console.log(
-      `OverloadFit backend running on http://localhost:${PORT}`
-    );
-  }
-);
->>>>>>> origin/main
