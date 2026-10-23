@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 5000;
 
 connectDB();
 
-// Fixed CORS configuration for production and local development
+// CORS configuration for local development and production
 app.use(
   cors({
     origin: [
@@ -50,6 +50,17 @@ app.use("/api/progress", progressRoutes);
 
 app.use(errorMiddleware);
 
+<<<<<<< HEAD
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`OverloadFit backend running on port ${PORT}`);
 });
+=======
+app.listen(
+  PORT,
+  () => {
+    console.log(
+      `OverloadFit backend running on http://localhost:${PORT}`
+    );
+  }
+);
+>>>>>>> origin/main

@@ -1,8 +1,9 @@
 import axios from "axios";
 
 const api = axios.create({
-        baseURL: "https://overload-backend-bmgr.onrender.com/api",  headers: {
-        "Content-Type": "application/json"
+  baseURL: "https://overload-backend-bmgr.onrender.com/api",
+  headers: {
+    "Content-Type": "application/json"
   }
 });
 
